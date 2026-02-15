@@ -11,7 +11,9 @@ from openai import AzureOpenAI  # Azure OpenAI APIのクライアント
 from PIL import Image, ImageDraw, ImageFont  # ImageFontを追加
 
 # --- クライアントの準備 ---
-endpoint = os.environ["VISION_ENDPOINT"]  # Azure Vision APIのエンドポイントURLを環境変数から取得
+endpoint = os.getenv("VISION_ENDPOINT") 
+if not endpoint:
+    raise RuntimeError("VISION_ENDPOINT が未設定です。Streamlit Cloud の Secrets に設定してください。")
 key = os.environ["VISION_KEY"]  # Azure Vision APIのキーを環境変数から取得
 client = ImageAnalysisClient(endpoint, AzureKeyCredential(key))  # Azure Vision APIクライアントを初期化
 
