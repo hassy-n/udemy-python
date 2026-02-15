@@ -2,3 +2,4 @@ streamlit
 azure-ai-vision-imageanalysis
 azure-core
 deep-translator
+openai
