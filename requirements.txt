@@ -1,1 +1,10 @@
-streamlit>=1.40,<2.0
+streamlit
+azure-ai-vision-imageanalysis
+azure-core
+deep-translator
+openai
+pandas
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
