@@ -1,6 +1,1 @@
-streamlit
-azure-ai-vision-imageanalysis
-azure-core
-deep-translator
-openai
-pandas
+streamlit>=1.40,<2.0
