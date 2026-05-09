@@ -1,0 +1,15 @@
+{
+  "name": "udemy-python-x-post-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generate daily X post drafts with the OpenAI API for human review.",
+  "type": "commonjs",
+  "scripts": {
+    "generate:x-posts": "node scripts/generate-x-posts.js",
+    "generate:x-posts:dry-run": "node scripts/generate-x-posts.js --dry-run",
+    "check": "node --check scripts/generate-x-posts.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
